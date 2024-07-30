@@ -51,12 +51,17 @@ nav ul li {
     margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     font-size: 20px;
     color: #222222;
     position: relative;
     font-weight: 480; 
+    transition: font-weight 0.5s ease;
+}
+
+nav ul li a:hover {
+    font-weight: 700;
 }
 
 nav ul li a::after {

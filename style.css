@@ -45,6 +45,8 @@ nav {
     border-radius: 50%;
 }
 
+/* nav bar text animation when hovering */
+
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -79,18 +81,20 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.headerText {
+/* header main text styling */
+
+.header-text {
     margin: 10% 5%;
     font-size: 30px;
     color: white;
 }
 
-.headerText h1 {
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
 
-.headerText h1 span {
+.header-text h1 span {
     background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(105, 105, 105, 1) 79%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -123,4 +127,67 @@ main #about {
 .col2 h1 {
     font-size: 60px;
     color: rgba(220, 220, 220, 1);
+}
+
+/* projects section */
+
+.timeline {
+    position: relative;
+    padding: 3% 0;
+    margin: 0 auto;
+    width: 60%;
+    border-left: 10px solid #696969;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 15%;
+    padding-left: 5%;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0px; /* Positioning the branch */
+    width: 100px;
+    height: 10px;
+    background: #696969; /* Dot color */
+    top: 15px; /* Adjust vertical position */
+}
+
+.timeline-content {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.timeline-subitem {
+    position: relative;
+    margin-left: 40px; /* Indent for the subitem */
+    margin-top: 10px;
+}
+
+.timeline-subitem::before {
+    content: '';
+    position: absolute;
+    top: 20px; /* Vertical alignment of subitem line */
+    left: -20px; /* Position of the horizontal line */
+    width: 20px;
+    height: 4px;
+    background: #696969;
+    border-radius: 8px;
+}
+
+.subitem-content {
+    padding: 10px;
+    border-radius: 6px;
+    background: #e9e9e9;
+    margin-left: 20px; /* Space for the subitem content */
+}
+
+#timeline-picture {
+    margin-left: 40px;
+    margin-top: 10px;
+    max-width: 812px;
 }

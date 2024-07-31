@@ -16,12 +16,14 @@
     <div class="container">
         <nav>
             <img id="logo" src="images/sarang.jpg" alt="logo picture">
-            <ul>
+            <ul id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closeMenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" id="openIcon" onclick="openMenu()"></i>
         </nav>
     </div>
     <div class="header-text">
@@ -82,5 +84,24 @@
         </div>
     </div>
 </footer>
+
+<script>
+
+// menu opening and closing
+var menu = document.getElementById("menu");
+var menuBars = document.getElementById("openIcon");
+
+function openMenu() {
+    menu.style.right = "0";
+    openIcon.style.display = "none";
+}
+
+function closeMenu() {
+    menu.style.right = "-200px"
+    openIcon.style.display = "block";
+}
+
+</script>
+
 </body>
 </html>

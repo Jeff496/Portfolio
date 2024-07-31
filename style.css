@@ -27,7 +27,7 @@ header {
     background-repeat: no-repeat;
 }
 
-header .container {
+.container {
     padding: 10px 10%;
     background-color: rgba(186, 186, 186, 0.5);
 }
@@ -145,27 +145,29 @@ main #about {
     padding-left: 5%;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 0px; /* Positioning the branch */
-    width: 100px;
-    height: 10px;
-    background: #696969; /* Dot color */
-    top: 15px; /* Adjust vertical position */
-}
+
 
 .timeline-content {
+    position: relative;
     padding: 10px 20px;
     border-radius: 8px;
     background: #f9f9f9;
-    position: relative;
+    transition: transform 0.5s;
+}
+
+.timeline-content:hover {
+    transform: translateY(-10px);
 }
 
 .timeline-subitem {
     position: relative;
     margin-left: 40px; /* Indent for the subitem */
     margin-top: 10px;
+    transition: transform 0.5s;
+}
+
+.timeline-subitem:hover {
+    transform: translateY(-5px);
 }
 
 .timeline-subitem::before {
@@ -189,5 +191,38 @@ main #about {
 #timeline-picture {
     margin-left: 40px;
     margin-top: 10px;
-    max-width: 812px;
+    max-width: 100%;
+}
+
+/* footer section */
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(135deg, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 79%);
+}
+
+footer .container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(150, 150, 150, 1);
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts a,
+.contacts p {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.contacts a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+i {
+    margin: 5px 20px;
 }

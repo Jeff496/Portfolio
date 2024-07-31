@@ -329,3 +329,18 @@ nav .fa-solid {
     }
 
 }
+
+/* nav bar changes for medium screens */
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 750px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+}

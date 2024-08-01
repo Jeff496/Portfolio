@@ -330,17 +330,16 @@ nav .fa-solid {
         height: 30vh;
         justify-content: space-evenly;
         align-items: center;
-        
     }
 
     .footer-content a {
         height: clamp(20px, 30px, 40px);
         width: clamp(120px, 140px, 160px);
+        margin-bottom: 10px;
     }
 
-    .footer-content a,
     .footer-content h1 {
-        margin: 0;
+        font-size: 35px;
     }
 
     .contacts .fa-solid.fa-phone {
@@ -367,5 +366,13 @@ nav .fa-solid {
 @media screen and (min-width: 650px) and (max-width: 750px) {
     nav ul li a {
         font-size: 16px;
+    }
+}
+
+/* footer changes for medium screens */
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+    .footer-content a {
+        height: clamp(35px, 60%, 40px);
     }
 }

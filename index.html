@@ -17,10 +17,10 @@
         <nav id="home">
             <img id="logo" src="images/sarang.jpg" alt="logo picture">
             <ul id="menu">
-                <li><a href="#home" onclick="closeMenuLarge()">Home</a></li>
-                <li><a href="#about" onclick="closeMenuLarge()">About</a></li>
-                <li><a href="#projects" onclick="closeMenuLarge()">Projects</a></li>
-                <li><a href="#footer" onclick="closeMenuLarge()">Contact</a></li>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#footer" onclick="closeMenu()">Contact</a></li>
                 <i class="fa-solid fa-x" onclick="closeMenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" id="openIcon" onclick="openMenu()"></i>
@@ -98,11 +98,9 @@ function openMenu() {
 
 function closeMenu() {
     menu.style.right = "-200px";
-    openIcon.style.display = "block";
-}
-
-function closeMenuLarge() {
-    menu.style.right = "-200px";
+    if (window.innerWidth <= 600) {
+        openIcon.style.display = "block";
+    }
 }
 
 </script>

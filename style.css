@@ -315,6 +315,11 @@ nav .fa-solid {
 
     /* footer */
 
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-content {
         flex-direction: column;
         height: 30vh;
@@ -323,9 +328,24 @@ nav .fa-solid {
         
     }
 
+    .footer-content a {
+        height: clamp(20px, 30px, 40px);
+        width: clamp(120px, 140px, 160px);
+    }
+
     .footer-content a,
     .footer-content h1 {
         margin: 0;
+    }
+
+    .contacts .fa-solid.fa-phone {
+        display: none;
+    }
+
+    .contacts p {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
     }
 
 }

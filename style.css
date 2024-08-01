@@ -204,18 +204,23 @@ main #about {
 
 /* footer section */
 
-.footer-content {
+footer {
+    display: flex;
+    flex-direction: column;
     height: 20vh;
+}
+
+.footer-content {
     background: linear-gradient(135deg, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 79%);
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    align-items: center;
 }
 
 .footer-content h1 {
-    margin-top: 50px;
-    margin-left: 10%;
     background: linear-gradient(135deg, rgba(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 79%);
+    margin: 0 5%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -223,10 +228,9 @@ main #about {
 }
 
 .footer-content a {
+    margin: 0 5%;
     text-decoration: none;
     color: white;
-    margin-top: 50px;
-    margin-right: 10%;
     background-color: #696969;
     border-radius: 8px;
     padding: 10px;
@@ -241,6 +245,7 @@ main #about {
 footer .container {
     width: 100%;
     background-color: rgba(150, 150, 150, 1);
+    margin-top: auto;
 }
 
 .contacts {

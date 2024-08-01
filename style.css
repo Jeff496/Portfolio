@@ -343,7 +343,8 @@ nav .fa-solid {
     }
 
     .contacts .fa-solid.fa-phone {
-        display: none;
+        margin-right: 10px;
+        margin-left: 0px;
     }
 
     .contacts p {

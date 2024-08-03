@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d97d80d8a0.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
 <!-- header with nav bar -->
@@ -84,26 +85,6 @@
         </div>
     </div>
 </footer>
-
-<script>
-
-// menu opening and closing
-var menu = document.getElementById("menu");
-var openIcon = document.getElementById("openIcon");
-
-function openMenu() {
-    menu.style.right = "0";
-    openIcon.style.display = "none";
-}
-
-function closeMenu() {
-    menu.style.right = "-200px";
-    if (window.innerWidth <= 600) {
-        openIcon.style.display = "block";
-    }
-}
-
-</script>
 
 </body>
 </html>

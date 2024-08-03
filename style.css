@@ -267,13 +267,14 @@ i {
     margin: 5px 20px;
 }
 
+nav .fa-solid {
+    display: none;
+}
+
 /* media queries */
 
 /* small */
 
-nav .fa-solid {
-    display: none;
-}
 
 @media only screen and (max-width: 600px) {
 

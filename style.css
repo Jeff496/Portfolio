@@ -290,7 +290,7 @@ nav .fa-solid {
         display: block;
         font-size: 25px;
     }
-    nav ul {
+    #menu {
         background: rgba(186, 186, 186, 0.8);
         position: fixed;
         top: 0;
@@ -301,11 +301,11 @@ nav .fa-solid {
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li {
+    #menu li {
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid {
+    #menu .fa-solid {
         position: absolute;
         top: 25px;
         left: 5px;
